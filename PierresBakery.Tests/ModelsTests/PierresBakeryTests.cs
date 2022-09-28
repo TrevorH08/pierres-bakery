@@ -10,7 +10,7 @@ namespace PierresBakery.Models.Tests
     public void Bread_BreadQuantityDivisibleByThree_True()
     {
       Bread testBread = new Bread(3);
-      Assert.AreEqual(true, testBread.BreadCost());
+      Assert.AreEqual(10, testBread.BreadCost());
     }
   }
 }
