@@ -1,4 +1,4 @@
-using Microsoft.VisalStudio.TestTools.UnitTesting;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using PierresBakery.Models;
 
 namespace PierresBakery.Models.Tests
@@ -9,8 +9,8 @@ namespace PierresBakery.Models.Tests
     [TestMethod]
     public void Bread_BreadQuantityDivisibleByThree_True()
     {
-      // Bread testBread = new Bread();
-      // Assert.AreEqual(true, testBread.BreadCost(3));
+      Bread testBread = new Bread(3);
+      Assert.AreEqual(true, testBread.BreadCost());
     }
   }
 }
