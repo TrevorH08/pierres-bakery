@@ -41,5 +41,11 @@ namespace PierresBakery.Models.Tests
       Pastry testPastry = new Pastry(2);
       Assert.AreEqual(4, testPastry.PastryCost());
     }
+    [TestMethod]
+    public void Pastry_PastryQuantityApplyDiscountEveryThree_True()
+    {
+      Pastry testPastry = new Pastry(6);
+      Assert.AreEqual(10, testPastry.PastryCost());
+    }
   }
 }
