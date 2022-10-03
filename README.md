@@ -1,6 +1,6 @@
-# _{Application Name}_
+# _Pierre's Bakery_
 
-#### By _**{List of contributors}**_
+#### By _**Trevor Hunter**_
 
 #### _{Brief description of application}_
 
