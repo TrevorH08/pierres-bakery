@@ -14,14 +14,15 @@ namespace PierresBakery.Models
     public int BreadCost()
     {
       int price = 5;
+      int discount = BreadQuantity / 3 * price;
       if (BreadQuantity % 3 == 0 )
       {
-        int finalCost = BreadQuantity * price - BreadQuantity / 3 * price;
-        return finalCost;
+        int discountCost = BreadQuantity * price - BreadQuantity / 3 * price;
+        return discountCost;
       }
       else
       {
-        int normalCost = BreadQuantity * price;
+        int normalCost = (BreadQuantity * price) - discount;
         return normalCost;
       }
     }
