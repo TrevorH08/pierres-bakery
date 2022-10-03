@@ -8,11 +8,11 @@ namespace Checkout
   {
     public static void Main()
     {
-      // Console.WriteLine("Hello");
-      // Console.WriteLine("Enter Desired amount of bread: ");
-      // int breadQuantity = int.Parse(Console.ReadLine());
-      // Bread buyBread = new Bread(breadQuantity);
-      // Console.WriteLine("Price: " + buyBread.BreadCost());
+      Console.WriteLine("Hello");
+      Console.WriteLine("Enter Desired amount of bread: ");
+      int breadQuantity = int.Parse(Console.ReadLine());
+      Bread buyBread = new Bread(breadQuantity);
+      Console.WriteLine("Price: " + buyBread.BreadCost());
 
     }
   }
