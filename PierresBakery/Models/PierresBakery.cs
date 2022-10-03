@@ -4,26 +4,41 @@ namespace PierresBakery.Models
 {
   public class Bread
   {
-    public int Amount { get; set; }
+    public int BreadQuantity { get; set; }
 
-    public Bread( int amount )
+    public Bread( int breadQuantity )
     {
-      Amount = amount;
+      BreadQuantity = breadQuantity;
     }
 
-    public int Cost()
+    public int BreadCost()
     {
       int price = 5;
-      if (Amount % 3 == 0 )
+      if (BreadQuantity % 3 == 0 )
       {
-        int finalCost = Amount * price - Amount / 3 * price;
+        int finalCost = BreadQuantity * price - BreadQuantity / 3 * price;
         return finalCost;
       }
       else
       {
-        int normalCost = Amount * price;
+        int normalCost = BreadQuantity * price;
         return normalCost;
       }
     }
   }
+  
+//   public class Pastry
+//   {
+//     public int PastryQuantity { get; set; }
+
+//     public Pastry( int pastryQuantity )
+//     {
+//       PastryQuantity = pastryQuantity;
+//     }
+
+//     public int PastryCost()
+//     {
+//       int price = 2;
+//     }
+//   }
 }
