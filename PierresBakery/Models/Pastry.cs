@@ -13,7 +13,9 @@ namespace PierresBakery.Models
 
     public int PastryCost()
     {
-      return 0;
+      int price = 2;
+      // int discount = price / 2;
+      return PastryQuantity * price;
     }
   }
 }
