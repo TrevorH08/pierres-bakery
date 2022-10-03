@@ -10,5 +10,10 @@ namespace PierresBakery.Models
     {
       PastryQuantity = pastryQuantity;
     }
+
+    public int PastryCost()
+    {
+      return 0;
+    }
   }
 }

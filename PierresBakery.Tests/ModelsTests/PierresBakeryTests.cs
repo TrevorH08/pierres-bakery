@@ -25,7 +25,7 @@ namespace PierresBakery.Models.Tests
       Assert.AreEqual(10, testBread.BreadCost());
     }
   }
-  
+
   [TestClass]
   public class PastryCostTests
   {
@@ -34,6 +34,12 @@ namespace PierresBakery.Models.Tests
     {
       Pastry testPastry = new Pastry(4);
       Assert.AreEqual(4, testPastry.PastryQuantity);
+    }
+    [TestMethod]
+    public void Pastry_PastryQuantityMultipliableByPriceWithoutDiscount_True()
+    {
+      Pastry testPastry = new Pastry(2);
+      Assert.AreEqual(4, testPastry.PastryCost());
     }
   }
 }
